@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'FinalProjectApp',
+    'restaurant',
     'rest_framework',
     'djoser',
     'rest_framework.authtoken',
@@ -68,7 +68,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "FinalProject.urls"
+ROOT_URLCONF = "littlelemon.urls"
 
 TEMPLATES = [
     {
@@ -85,7 +85,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "FinalProject.wsgi.application"
+WSGI_APPLICATION = "littlelemon.wsgi.application"
 
 
 # Database
@@ -141,8 +141,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'FinalProjectApp/static/'
+STATIC_URL = 'restaurant/static/'
 
 STATICFILES_DIRS = [
-    "FinalProjectApp/static",
+    "restaurant/static",
 ]
